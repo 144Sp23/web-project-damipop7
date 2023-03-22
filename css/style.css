@@ -1,0 +1,217 @@
+/*
+Author: Oluwadamilola Popoola
+Date: 3/14/2023
+File Name: styles.css
+*/
+
+body, header, nav, main, footer, img, h1, ul {
+    margin: 0;
+    padding: 0;
+    border: 0; 
+}
+
+body{
+    background-color: #000;
+}
+
+/*Image*/
+img{
+    max-width: 100%;
+    max-height: 100%
+    display: block; 
+    height: auto;    
+}
+
+#pic{
+    width: 40%;
+    height: auto;
+    margin: 0 3%;
+    float: left;
+}
+
+#hor{
+    display: flex;
+    justify-content: space-between;
+}
+
+#bbp{
+    height: 50%
+}
+
+/* Style rule for header*/
+header{
+    text-align: left;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #000;
+/*#F64C72;*/
+}
+
+header h1{
+    font-family: 'Lora', serif;    
+}
+
+
+/*Style riles for nav area*/
+nav{
+    /*
+    width: 70%;
+    float: right;
+    */
+    margin: 5em 3em 0 0;
+    padding: 1%;
+    margin-bottom: 1%
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: right;  
+    margin: 0;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 1.5em;
+    border-top: 1px solid;
+}
+
+nav li a {
+    display: block;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;  
+    color: #fff;
+}
+
+nav li:first-child{
+    border-top: none;
+}
+
+.button{
+    background-color: #2F2FA2;
+}
+
+/*Style rule for main content*/
+main{
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.15em;
+}
+
+#intro{
+    font-size: 3em;
+}
+
+main p{
+    font-size: 1.35em;
+    color: #000;
+    font-family: 'PT Serif', serif;
+}
+
+footer{
+    /*background-color: #2F2FA2;*/
+}
+footer p{
+    font-size: 0.75em;
+    text-align: center;
+    padding: 0.1em;
+    color: #fff;
+}
+
+#proj1, #proj2, #proj3{
+    margin: 0 2%;
+}
+
+/*
+.round{
+    border-radius: 8px;
+    width: 200;
+    height: 100;
+}
+*/
+
+.external-link {
+  color: #2F2FA2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.external-link:hover{
+    color: #2F2FA2;
+}
+
+#head{
+    color: #2F2FA2; 
+    font-size: 1.5em;
+}
+
+#smile{
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about{
+    font-size: 1.35em;
+}
+
+#contact{
+    font-size: 1.35em;
+}
+
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width: 630px) {
+    /* Tablet Viewport: Show tablet desktop class, hide mobile class */
+    .tablet-desktop{
+        display: block;
+    }
+    
+    .mobile{
+        display: none;
+    }
+    
+    /* Tablet Viewport: style rule for header */
+    header {
+        position: static;
+        padding-bottom: 2%;
+    }
+    
+    /*Tablet Viewport: Style rules for nav area */
+    nav li{
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+    
+    nav li:last-child{
+        border-right: none;
+    }
+    
+    nav li a{
+        padding: 0.1em 0.75em;
+    }
+    
+    /*Tablet Viewport: Style rules for main content area */
+    main ul{
+        margin: 0 0 4% 10%;
+    }
+    
+    footer p {
+        font-size: 0.75em;
+        text-align: center;
+        color: #fff;
+        padding: 0 1em;
+    }
+
+    footer p a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+/*Stopped here */
+
+
+
+
